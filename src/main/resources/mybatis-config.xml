@@ -8,8 +8,9 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <!--数据库连接信息-->
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://192.168.123.72/mybatis?useSSl=false"/>
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+                <property name="url" value="jdbc:mysql://192.168.1.72/mybatis?useSSl=false"/>
                 <property name="username" value="root"/>
                 <property name="password" value="yeecode"/>
             </dataSource>
@@ -17,6 +18,7 @@
     </environments>
     <mappers>
         <!--加载sql映射文件-->
-        <mapper resource="org/example/mapper/UserMapper.xml"/>
+<!--        <mapper resource="org/example/UserMapper.xml"/>-->
+        <mapper resource="UserMapper.xml"/>
     </mappers>
 </configuration>

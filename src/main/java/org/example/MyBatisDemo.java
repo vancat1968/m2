@@ -1,7 +1,7 @@
 package org.example;
 
 
-import org.example.pojo.User;
+import org.example.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -27,7 +27,7 @@ public class MyBatisDemo {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         // 3. 执行 sql 语句
-        List<User> users = sqlSession.selectList("test.selectAll");
+        List<User> users = sqlSession.selectList("selectAll");
 
         System.out.println(users);
 

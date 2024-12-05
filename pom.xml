@@ -21,11 +21,19 @@
             <version>3.5.5</version>
         </dependency>
 
-        <!--mysql 驱动-->
+<!--        &lt;!&ndash;mysql 驱动&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>runtime</version>-->
+<!--        </dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>runtime</version>
+            <version>8.0.24</version>
         </dependency>
 
         <!--junit 单元测试-->

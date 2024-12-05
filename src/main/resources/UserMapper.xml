@@ -6,8 +6,8 @@
 <!--
     namespace：名称空间
 -->
-<mapper namespace="org.example.mapper.UserMapper">
-    <select id="selectAll" resultType="com.ruochen.pojo.User">
+<mapper namespace="org.example.UserMapper">
+    <select id="selectAll" resultType="org.example.User">
         select * from tb_user;
     </select>
 </mapper>
